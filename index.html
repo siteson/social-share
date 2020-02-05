@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Preview | Social Share</title>
+<link rel="stylesheet" href="css/share.css" type="text/css" />
+<script src="js/jquery1.8.2.min.js" type="text/javascript"></script>
+<script src="js/share.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div style="text-align:center;font:normal 14px/24px 'MicroSoft YaHei';clear:both;width:160px;margin:0 auto;"><br><br><br><br><br><br>
+<div id="socialShare"></div>
+<script>
+	$(function() {
+
+		$("#socialShare").socialShare({
+			content: '', 	/** 简介 **/
+				 			/** url:'', 链接，默认是当前页面 **/
+			 				/** titile:'', 标题，默认是当前页面标题 **/
+			pic:''  		/** 缩略图 **/
+		});
+
+	});
+
+	$("#shareQQ").on("click",function(){
+		$(this).socialShare("tQQ");
+	})
+</script>
+</div>
+
+</body>
+</html>
