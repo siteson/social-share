@@ -1,6 +1,6 @@
 # social-share
 
-
+![previews](./previews/preview-rgb.png)
 
 Jquary社交软件分享组件  
 
